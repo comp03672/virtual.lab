@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <title>Определение ускорения свободного падения с помощью математического маятника.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Определение ускорения свободного падения с помощью математического маятника.</h1>
+
+<div class="container">
+
+  <div class="left">
+    <div class="videos-row">
+      <div class="video-block" id="video1-block">
+        <video id="video1" src="images/video1.mp4" loop preload="metadata"></video>
+        <div class="timer-control">
+          <div class="timer-display" id="timer1">00:00</div>
+          <div class="timer-buttons">
+            <button data-action="start" data-video="video1" data-timer="timer1">Пуск</button>
+            <button data-action="pause" data-video="video1" data-timer="timer1">Пауза</button>
+            <button data-action="reset" data-video="video1" data-timer="timer1">Сброс</button>
+          </div>
+        </div>
+      </div>
+      <div class="video-block" id="video2-block">
+        <video id="video2" src="images/video2.mp4" loop preload="metadata"></video>
+          <div class="timer-control">
+            <div class="timer-display" id="timer2">00:00</div>
+            <div class="timer-buttons">
+              <button data-action="start" data-video="video2" data-timer="timer2">Пуск</button>
+              <button data-action="pause" data-video="video2" data-timer="timer2">Пауза</button>
+              <button data-action="reset" data-video="video2" data-timer="timer2">Сброс</button>
+             </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="right">
+    <h3>Цель:</h3>
+      <p>Определить ускорение свободного падения с помощью математического маятника.</p>
+
+    <h3>Ход работы:</h3>
+      <p>1. Установите на краю стола штатив. У его верхнего конца укрепите с помощью муфты кольцо и подвесьте к нему шарик на нити.</p>
+      <p>2. Измерьте длину нити l1и длину нити l2.</p>
+      <p>3. Измерьте время t1,за которое маятник (с длиной нити l1) совершает 15 колебаний. Аналогично со временем t2, за которое маятник (с длиной нити l2) совершает 20 колебаний.</p>
+      <p>4. Вычислите T1 и T2 по формуле: <math display="block">
+                                            <mi>T</mi>
+                                            <mo>=</mo>
+                                            <mfrac>
+                                              <mi>t</mi>
+                                              <mi>n</mi>
+                                            </mfrac>
+                                          </math>
+      </p>
+      <p>5. Рассчитайте g1 и g2 по формуле: <math display="block">
+                                              <mi>g</mi>
+                                              <mo>=</mo>
+                                              <mfrac>
+                                                <mi>4π<sup>2</sup>l</mi>
+                                                <mi>T<sup>2</sup></mi>
+                                              </mfrac>
+                                            </math>
+      </p>
+      <p>6. Найдите среднее значение: <math display="block">
+                                        <mi>gср</mi>
+                                        <mo>=</mo>
+                                        <mfrac>
+                                          <mi>g1+g2</mi>
+                                          <mi>2</mi>
+                                        </mfrac>
+                                      </math>
+      </p>
+      <p>Все результаты занесите в таблицу:</p>
+
+    <div class="table-container">
+      <table>
+        <tr>
+          <th>№ опыта</th>
+          <th>l, м</th>
+          <th>n</th>
+          <th>t, с</th>
+          <th>T, c</th>
+          <th>g</th>
+          <th>gср</th>
+        </tr>
+        <tr>
+          <tr><td>1</td><td>0,80</td><td>10</td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td rowspan="7" contenteditable="true"></td></tr>
+          <tr><td>2</td><td>1,10</td><td>20</td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td></tr>
+      </table>
+    </div>
+  </div>
+  <button id="checkBtn">Проверить</button>
+  <div id="resultBox">
+      <h3>Отлично! А теперь проверьте свои ответы!</h3>
+      <div class="table-container">
+        <table>
+        <tr>
+          <th>№ опыта</th>
+          <th>l, м</th>
+          <th>n</th>
+          <th>t, с</th>
+          <th>T, c</th>
+          <th>g, м/с<sup>2</sup></th>
+          <th>gср</th>
+        </tr>
+            <tr>
+            <tr><td>1</td><td>0,85</td><td>15</td><td>28</td><td>1.87</td><td></td><td rowspan="7"></td></tr>
+            <tr><td>2</td><td>1,10</td><td>20</td><td>42</td><td>2.10</td><td></td></tr>
+        </table>
+      </div>
+      <p>Расчёт периода:</p>
+      <math display="block">
+        <mi>T1</mi>
+        <mo>=</mo>
+        <mfrac>
+          <mi>18c</mi>
+          <mi>10</mi>
+        </mfrac>
+          <mo>=</mo>
+          <mi>1,8c</mi>
+      </math>
+      <math display="block">
+        <mi>T2</mi>
+        <mo>=</mo>
+        <mfrac>
+          <mi>42c</mi>
+          <mi>20</mi>
+        </mfrac>
+        <mo>=</mo>
+        <mi>2,10с</mi>
+      </math>
+      <p>Расчёт ускорения свободного падения:</p>
+      <math display="block">
+        <mi>g1</mi>
+        <mo>=</mo>
+        <mfrac>
+          <mi>4π<sup>2</sup>·0,80м</mi>
+          <mi>(1,8с)<sup>2</sup></mi>
+        </mfrac>
+        <mo>=</mo>
+        <mi>9,75 м/с<sup>2</sup></mi>
+      </math>
+      <math display="block">
+        <mi>g2</mi>
+        <mo>=</mo>
+        <mfrac>
+          <mi>4π<sup>2</sup>·1,10м</mi>
+          <mi>(2,10с)<sup>2</sup></mi>
+        </mfrac>
+        <mo>=</mo>
+        <mi>9,85 м/с<sup>2</sup></mi>
+      </math>
+      <p>Расчёт среднего значения ускорения свободного падения:</p>
+      <math display="block">
+      <mi>gср</mi>
+      <mo>=</mo>
+      <mfrac>
+        <mi>9,75м/с<sup>2</sup>+9,85м/с<sup>2</sup></mi>
+        <mi>2</mi>
+      </mfrac>
+      <mo>=</mo>
+      <mi>9,8м/с<sup>2</sup></mi>
+      </math>
+    <p>Вывод: таким образом, мы получили наиболее точное значение ускорение свободного падения с помощью двух маятников. И если необходимо еще более точное значение, то необходимо провести как можно больше опытов.</p>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
